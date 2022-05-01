@@ -1,0 +1,92 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(250, 210, 247);
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+form,
+.addtask  {
+    text-align: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.addtask {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.task {
+    display: flex;
+    flex-direction: row;
+}
+.task>div {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+input,
+textarea,
+button {
+    background-color: rgba(184, 113, 241, 0.3);
+    border: none;
+    color: rgb(3, 73, 179);
+    border-radius: 3px;
+    padding: 3px;
+    margin: 5px;
+}
+.closeUser {
+    background-color: rgba(141, 199, 105, 0.3);
+    border: none;
+    color: rgb(197, 234, 245);
+    border-radius: 3px;
+    padding: 3px;
+    margin: 1px;
+}
+label {
+    text-align: end;
+    flex: 1;
+    padding: 3px;
+}
+.taskview {
+    margin: 10px 20px;
+    padding: 1rem;
+    background-color: rgb(248, 183, 180);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+body>h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.taskname {
+    display: block;
+    text-transform: uppercase;
+}
+.choice {
+    background-color: rgb(248, 126, 96);
+}
+.message {
+    font-size: 0.7rem;
+    display: block;
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+}
+
+.error {
+    color: rgb(114, 2, 2);
+}
+
+.success {
+    color: #037509;
+}
+.successtask {
+    visibility: hidden;
+    color: #037509;
+    font-size: 0.7rem;
+}

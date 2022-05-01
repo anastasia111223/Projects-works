@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Регистрация</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/icon1.png" type="image/png">
+        <link rel="stylesheet" href="css/registr.css">
+    </head>
+    <body class="container">
+        <header>
+            <nav class="menu">
+                <a href="index.html">Главная</a>
+                <a href="#">Новости</a>
+                <a href="#">Студентам</a>
+                <a href="#">Абитуриентам</a>
+                <a href="#" id="sci">Наука</a>
+                <a href="calendar.html">События</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </header>
+        <h3>Регистрация</h3>
+        <form>
+            <div class="email">
+                <label for="email"></label>
+                <input id="email" 
+                        type="email" 
+                        placeholder="email"
+                        required
+                        name="email">
+            </div>
+            <div>
+                <label for="ps"></label>
+                <input id="ps" 
+                        type="password" 
+                        placeholder="пароль"
+                        required
+                        minlength="6"
+                        maxlength="30"
+                        name="password">
+            </div>
+            <div>
+                <label for="name"></label>
+                <input id="name" 
+                        type="text"
+                        placeholder="имя"
+                        required
+                        name="name">
+            </div>
+            <div>
+                <label for="surname"></label>
+                <input id="surname" 
+                        type="text"
+                        placeholder="фамилия"
+                        required
+                        name="surname">
+            </div>
+            <span>Пол:  </span>
+            <label>
+                мужской
+                <input type="radio" name="male" value="male">
+                
+            </label>
+            <label>
+                женский
+                <input type="radio" name="male" value="female">
+            </label>
+            <div>
+                <label class="data" for="birth">Дата рождения</label>
+                <input id="birth" type="date" name="datebirth">
+            </div>
+            <div>
+                <label class="data" for="ava">Загрузить аватар</label>
+                <input id="ava" type="file">
+            </div>
+        </form>
+    </body>
+</html>

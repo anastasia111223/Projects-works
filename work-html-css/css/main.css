@@ -1,0 +1,182 @@
+@import "style.css";
+.bgrid {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 3rem;
+    background-color: rgb(138, 180, 110);
+    padding-left: 10px;
+}
+aside {
+    width: 16%;
+    background-color: rgb(165, 144, 27);
+    color: rgb(105, 64, 13);
+    text-align: center;
+    padding: 5px;
+    margin-left: 10px;
+}
+aside a {
+    font-style: oblique;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(21, 8, 78);
+}
+aside h4 {
+    border-top: 2px dashed rgb(21, 8, 78);
+    padding-top: 10px;
+    margin: 10px 15px;
+}
+aside form {
+    text-align: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+main {
+    width: 84%;
+    margin-top: 0;
+}
+.scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    counter-reset: li;
+    list-style-type: none;
+    padding: 0;
+}
+.scroll li {
+    flex: 1;
+    position: relative;
+    padding: 0;
+}
+.scroll li a {
+    text-decoration: none;
+    position: relative;
+}
+.pic {
+    width: 100%;
+    height: 15rem;
+}
+.scroll li span {
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+    text-transform: uppercase;
+    background-color: rgba(165, 144, 27, 0.7); 
+    padding: 3px;
+    font-weight: bold;
+}
+
+.scroll li:hover {
+    box-shadow: 3px 3px 1px rgb(81, 117, 57);
+    transition: background-color 1s;
+}
+.blok {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.blok1 {
+    flex: 2;
+}
+.blok1 img {
+    height: auto;
+}
+.blok2 {
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.blok2 h3 {
+    text-transform: uppercase;
+    margin-block-start: .3em;
+    margin-block-end: .3em;  
+    font-size: 1rem;
+}
+.blok2 a {
+    text-decoration: none;
+    color: rgb(21, 8, 78);
+    font-size: 0.9rem;
+    margin-block-end: .5em; 
+}
+.part3 {
+    width: 25%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+.link-fon img,
+.part4 img {
+    height: 100%;
+}
+.link-fon {
+    position: relative;
+    flex: 1; 
+    height: 9rem;
+    overflow: hidden;
+}
+.part4 {
+    width: 75%;
+    position: relative;
+    overflow: hidden;
+    height: 18rem;
+}
+.link-end {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    text-transform: uppercase;
+    background-color: rgba(155, 221, 78, 0.5); 
+    padding: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(21, 8, 78);
+}
+.karta {
+    text-decoration: none;
+    width: 25%;
+    overflow: hidden;
+}
+.link-fon a:hover img,
+.part4 a:hover img,
+.karta:hover img {
+    transform: scale(1.07);
+    transition: transform 1s linear;
+}
+@media screen and (max-width: 599px){ 
+    .scroll,
+    .blok {
+        flex-direction: column;  
+        flex-wrap: wrap;   
+    }
+    .bgrid {
+        margin-top: 13rem;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;   
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    aside,
+    .part3,
+    .part4,
+    .karta  {
+        width: 100%;
+    }
+    aside a,
+    aside h4 {
+        display: none;
+    }
+}

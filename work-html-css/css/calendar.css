@@ -1,0 +1,42 @@
+@import "style.css";
+body {
+    background-color: rgb(136, 177, 97);
+}
+main {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+main h2 {
+    margin-top: 3.5rem;
+}
+.fonpic {
+    position: relative;
+}
+.fonpic>h2 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(136, 177, 97,0.5);
+    color: rgb(47, 63, 32);
+}
+table caption {
+    text-transform: uppercase;
+    padding: 5px;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+th,
+td {
+    border-bottom: 1px groove rgb(245, 190, 71);
+}
+@media screen and (max-width: 599px){ 
+    table {
+        overflow-x: scroll;
+    }
+    .fonpic {
+        margin-top: 13rem;
+        display: flex;
+    }
+}

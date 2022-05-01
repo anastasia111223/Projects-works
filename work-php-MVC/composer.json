@@ -1,0 +1,21 @@
+{
+    "name": "developer/project",
+    "description": "homework_mvc",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cakes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anastasia Emelianova",
+            "email": "nastyajane@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-pdo": "*"
+      }
+}

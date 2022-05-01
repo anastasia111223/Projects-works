@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333333;
+}
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.cake {
+    padding: 1rem;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+.cake > div {
+    overflow: hidden;
+}
+.cake img:hover {
+    transform: scale(1.5);
+    transition: transform 2s;
+}
+.cake a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #333333;
+    border: 1px solid rgba(0,0,0,0.15);
+}
+.cake a:hover {
+    background: rgba(0,0,0,0.15);
+    transition: background-color 2s;
+}
+
+.modal {
+    position: fixed;
+    display: block; 
+    color: rgb(7, 50, 114);
+    text-align: center;
+    z-index: 20;
+    width: auto;
+    height: 70px;
+    top: 10%;
+    left: 10%;
+    padding: 20px;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    border-radius: 3px;
+    transition: 0.3s all;
+    background-color: rgb(162, 230, 209);
+}
+.hideModal {
+    display: none;
+}

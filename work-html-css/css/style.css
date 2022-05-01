@@ -1,0 +1,113 @@
+html {
+    font-size: 15px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(60, 97, 37);
+    margin: 0 auto;
+    z-index: 3;
+}
+.menu a {
+    padding: 1rem 1.5rem;
+    border-left: 2px solid;
+    border-color:  rgb(245, 190, 71);
+    text-transform: uppercase;
+    font-size: 1.5 rem;
+    color: rgb(245, 190, 71);
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: rgb(67, 122, 33);
+}
+.menu a:first-child {
+    border-left: none;
+}
+body {
+    margin: 0;
+    color: rgb(21, 8, 78);
+}
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+input {
+    background-color: rgba(207, 240, 187, 0.3);
+    border: none;
+    color: rgb(197, 234, 245);
+    border-radius: 3px;
+    padding: 3px;
+}
+label {
+    text-align: end;
+}
+input[type="checkbox"] {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+}
+input[type="checkbox"]+label {
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"]+label::before {
+    content: "";
+    z-index: 2;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgb(49, 114, 8);
+    border-radius: 7px;
+    background-color: inherit;
+    margin-top: 3px;
+    margin-right: 3px;
+    display: flex;
+}
+input[type="checkbox"]:checked+label::before {
+    content: "\2713";
+    text-align: center;
+    align-items: center;
+    padding-left: 2px;
+}
+body::-webkit-scrollbar {
+    width: 10px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: rgb(44, 80, 22);        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(110, 150, 85);    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 2px solid rgb(44, 80, 22);  /* padding вокруг плашки */
+}
+body {
+    scrollbar-width: thin;          /* "auto" или "thin"  */
+    scrollbar-color: rgb(107, 150, 81) rgb(44, 80, 22);   /* плашка скролла и дорожка */ 
+}
+@media screen and (max-width: 599px) { 
+    .menu {
+        flex-direction: column; 
+    }
+    .menu a {
+        padding: .3rem 2rem;
+        border-left: none;
+        border-bottom: 2px solid rgb(245, 190, 71);
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 839px) {
+    .menu a {
+        font-size: 0.87rem;
+        padding: 1rem 0.5rem;
+    }
+}
